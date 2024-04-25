@@ -3,6 +3,7 @@ Oblig 1 DATA 1700 V23
 Github brukernavn: raabd8573
 
 Github repo URL: https://github.com/raabd8573/Obligatory3-DATA1700-raabd8573
+Youtube URL: https://www.youtube.com/watch?v=1DWZlU50l6I&ab_channel=raaba001
 
 Kort beskrivelse av applikasjon:
 
