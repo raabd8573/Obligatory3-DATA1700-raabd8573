@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestilling av kinobiletter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body style="background-color: lavenderblush;">
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <h1> Bestilling av kinobiletter</h1>
+            <form class="form">
+                <div class="form-group">
+                   <br>
+                    <label for="film">Velg Film:</label>
+                    <select id="film" class="form-control" data-id="">
+                        <option value ="" selected> Velg film her</option>
+                        <option>Argylle</option>
+                        <option>Barbie</option>
+                        <option>Oppenheimer</option>
+                        <option>Dune Part Two</option>
+                        <option>Challengers</option>
+                        <option>The Godfather</option>
+                        <option>Interstellar</option>
+                    </select>
+                    <span id="feilFilm" style="color:red"></span>
+                </div>
+                <div class="form-group">
+                    <label for="antall">Antall</label>
+                    <input type="number" id="antall" class="form-control">
+                    <span id="feilAntall" style="color: red"></span>
+                </div>
+                <div class="form-group">
+                    <label for="fornavn">Fornavn:</label>
+                    <input type="text" id="fornavn" class="form-control">
+                    <span id="feilFornavn" style="color:red"></span>
+                </div>
+                <div class="form-group">
+                    <label for="etternavn">Etternavn:</label>
+                    <input type="text" id="etternavn" class="form-control">
+                    <span id="feilEtternavn" style="color:red"></span>
+                </div>
+                <div class="form-group">
+                    <label for="telefonnr">Telefonnr:</label>
+                    <input type="text" id="telefonnr" class="form-control">
+                    <span id="feilTelefonnr" style="color:red"></span>
+                </div>
+                <div class="form-group">
+                    <label for="epost">Epost:</label>
+                    <input type="text" id="epost" class="form-control">
+                    <span id="feilEpost" style="color:red"></span>
+                </div>
+            </form>
+            <div id="kjop-feil"></div>
+            <br>
+            <button class="btn btn-danger" onclick="regbillett()" style="background-color: beige;
+            color: black; border-color: black;">Kjøp billett</button>
+        </div>
+        <div class="col-md-7">
+            <h2> Alle billetter</h2>
+            <div id="utBillett"></div>
+            <button class="btn btn-danger" onclick="slettAlle()" style="background-color: beige; color: black;
+            border-color: black;">Slett alle billettene</button>
+            <script src="index.js"></script>
+        </div>
+    </div>
+</div>
+</body>
+</html>
